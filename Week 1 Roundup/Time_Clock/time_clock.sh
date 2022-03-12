@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#Revised Time Clock Code (Personal Complexity)
+#Revised Time Clock program (with complexity) inspired by class Time Clock example
 #Goal: Create Employee timecard that adds context, checks for integrity, and sends to a text file
 
 printf "Time Clock is running (Type 'stop' to exit)....\n"
@@ -26,5 +26,3 @@ while [ $counter == "false" ];                         #Conditional based on cou
 for name in "${EmployeeNames[@]}"; do                  #For each index in array add context and send to text file
     echo "Employee Name: $name, Clock-In-Time: $timestamp" >> clock_sheet.txt
 done
-
-
